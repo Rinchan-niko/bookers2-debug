@@ -1,5 +1,7 @@
 class BooksController < ApplicationController
 
+  impressionist :actions => [:show]
+
   before_action :authenticate_user!
   before_action :correct_book,only: [:edit]
 
